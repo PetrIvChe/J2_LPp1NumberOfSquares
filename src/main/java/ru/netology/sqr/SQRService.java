@@ -6,9 +6,10 @@ public class SQRService {
         int i;
         for (i = 10; i < 100; i++) {
             if (i * i >= lowRangeLimit && i * i <= upperRangeLimit) {
-                return count;
+                count++;
             }
         }
-        return 0;
+        
+        return count;
     }
 }
